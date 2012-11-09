@@ -12,7 +12,7 @@ ping = function() {
 		'teste_ajax.php',
 		{ping: 1},
 		function(data) {
-			console.log(data);
+			alert(data);
 		}
 	);
 }
