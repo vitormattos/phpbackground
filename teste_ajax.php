@@ -9,8 +9,7 @@ $shm = shm_attach(12356, 524288);
 $json = @json_decode( shm_get_var($shm, 1) );
 
 if(isset($json->pong) && $json->pong) {
-	$json->pong = time() - $json->pong;
-	echo json_encode($json);
+	echo json_encode(array('pong' => time() - $json->pong));
 }
 
 // faz o ping

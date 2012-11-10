@@ -12,7 +12,7 @@ function teste_shm() {
 	// responde o ping
 	if(isset($variavel->ping) && $variavel->ping) {
 		shm_put_var($shm, 1, '{"pong":'.time().'}');
-		echo "pong $time\n";
+		echo "pong ".(time() - $variavel->pong)."\n";
 	}
 }
 
