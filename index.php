@@ -5,21 +5,21 @@
 		<script src="jquery-1.8.2.min.js" type="text/javascript"></script>
 	</head>
 	<body>
-<input type="button" id="ping" value="PING">
-<script>
-ping = function() {
-	$.get(
-		'teste_ajax.php',
-		{ping: 1},
-		function(data) {
-			alert(data);
+		<input type="button" id="ping" value="PING">
+		<script>
+		ping = function() {
+			$.get(
+				'teste_ajax.php',
+				{ping: 1},
+				function(data) {
+					alert(data);
+				}
+			);
 		}
-	);
-}
 
-$('#ping').click(function() {
-	ping();
-});
-</script>​
+		$('#ping').click(function() {
+			ping();
+		});
+		</script>​
 	</body>
 </html>
