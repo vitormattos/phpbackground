@@ -4,4 +4,6 @@ File provess.php, is running forever, and the file cronjob.php checks if the fil
 
 Put both files in the same directory.
 
+for testing run the index.php file in your browser and click ping.
+
 Only this!
